@@ -28,6 +28,7 @@ function sendMail(form) {
   let dataToSend = {
     name: form.name.value,
     message: form.message.value,
+    department: form.department.value,
     "g-recaptcha-response": captcha,
   };
 
