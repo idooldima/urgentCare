@@ -2,8 +2,8 @@ let loader = document.getElementById("loader");
 let recaptchaError = document.getElementById("recaptcha-error");
 
 function sendMail() {
-  const CERVICE_ID = "service_6g4b9sf";
-  const TEMPLETE_ID = "template_fnlcymh";
+  const CERVICE_ID = "service_liawdtv";
+  const TEMPLETE_ID = "template_fmbc174";
   let captcha = grecaptcha.getResponse();
 
   // just for styles
