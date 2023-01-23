@@ -1,30 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/mobile.css" />
-    <link rel="stylesheet" href="./assets/css/spinner.css" />
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script type="text/javascript">
-      var onloadCallback = function () {
-        grecaptcha.render("html_element", {
-          sitekey: "6LeHSR0kAAAAAIa5LmIys5b28F75xmVInB3el_Cw",
-        });
-      };
-    </script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("cxGqJQeEC5ZcoLCcw");
-      })();
-    </script>
-    <!-- <script type="text/javascript">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/mobile.css" />
+  <link rel="stylesheet" href="./assets/css/spinner.css" />
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script type="text/javascript">
+    var onloadCallback = function () {
+      grecaptcha.render("html_element", {
+        sitekey: "6LeHSR0kAAAAAIa5LmIys5b28F75xmVInB3el_Cw",
+      });
+    };
+  </script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("cxGqJQeEC5ZcoLCcw");
+    })();
+  </script>
+  <!-- <script type="text/javascript">
       window.onload = function () {
         document
           .getElementById("contact_form")
@@ -47,196 +45,178 @@
           });
       };
     </script> -->
-    <title>Urgent Care</title>
-  </head>
+  <title>Urgent Care</title>
+</head>
 
-  <body>
-    <div id="overlay"></div>
-    <div class="lds-roller" id="loader">
+<body>
+  <div id="overlay"></div>
+  <div class="lds-roller" id="loader">
+  </div>
+  <header class="header-container">
+    <div class="header-box">
+      <img src="./assets/img/logo.svg">
     </div>
-    <header class="header-container">
-      <div class="header-box">
-        <img src="./assets/img/logo.svg">
-      </div>
-    </header>
+  </header>
 
-    <section>
-      <div class="Title">
-        Carrers
+  <section>
+    <div class="Title">
+      Carrers
+    </div>
+    <div class="section-container">
+      <div class="carrers-box">
+        <div class="margin-bottom">
+          We are currently hiring for an Urgent Care Medical Director within
+          our new Urgent Care Clinic in<br />
+          Southampton, PA.<br />
+          Must be Board Certified/Board Eligible physician (Family Medicine or
+          Emergency Medicine) and<br />
+          Experience minimum 1 year.
+        </div>
+        <div class="margin-bottom">Part-time or Full Time.</div>
+        <div>
+          <div>Responsibilities:</div>
+          <ul>
+            <li class="num">
+              <span>-Provide direct care to patients of the clinic</span>
+            </li>
+            <li>
+              <span>-Provide supervision to the mid-level providers</span>
+            </li>
+            <li>
+              <span>-Serve as a laboratory medical director</span>
+            </li>
+            <li>
+              <span>-Participate in chart reviews</span>
+            </li>
+            <li>
+              <span>-Assist in developing and maintaining clinical policies</span>
+            </li>
+            <li>
+              <span>-This role is estimated to be 80% clinical and 20%
+                administrative</span>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <div>Compensation and Benefits:</div>
+          <ul>
+            <li>
+              <span>-Competitive salary commensurate with experience (from
+                $270,000 a year full time)</span>
+            </li>
+            <li>
+              <span>-Medical Director stipend</span>
+            </li>
+            <li>
+              <span>-Annual bonus opportunity (productivity bonus)</span>
+            </li>
+            <li>
+              <span>-Dental insurance</span>
+            </li>
+            <li>
+              <span>-Vision insurance</span>
+            </li>
+            <li>
+              <span>-PTO</span>
+            </li>
+            <li>
+              <span>-Paid malpractice including tail</span>
+            </li>
+            <li>
+              <span>-CME reimbursement</span>
+            </li>
+            <li>
+              <span>-Work life holncowith no night shifts.</span>
+            </li>
+            <li>
+              <span>-Work in a saburban area...</span>
+            </li>
+          </ul>
+        </div>
+        <div>Please call 268-570-9988 or fill out the form to apply.</div>
+        <div></div>
       </div>
-      <div class="section-container">
-        <div class="carrers-box">
-          <div class="margin-bottom">
-            We are currently hiring for an Urgent Care Medical Director within
-            our new Urgent Care Clinic in<br />
-            Southampton, PA.<br />
-            Must be Board Certified/Board Eligible physician (Family Medicine or
-            Emergency Medicine) and<br />
-            Experience minimum 1 year.
-          </div>
-          <div class="margin-bottom">Part-time or Full Time.</div>
+      <div class="form-container">
+        <form class="form-box" id="contact_form" action="?" method="post">
           <div>
-            <div>Responsibilities:</div>
-            <ul>
-              <li class="num">
-                <span>-Provide direct care to patients of the clinic</span>
-              </li>
-              <li>
-                <span>-Provide supervision to the mid-level providers</span>
-              </li>
-              <li>
-                <span>-Serve as a laboratory medical director</span>
-              </li>
-              <li>
-                <span>-Participate in chart reviews</span>
-              </li>
-              <li>
-                <span
-                  >-Assist in developing and maintaining clinical policies</span
-                >
-              </li>
-              <li>
-                <span
-                  >-This role is estimated to be 80% clinical and 20%
-                  administrative</span
-                >
-              </li>
-            </ul>
+            <span>Name</span>
+            <input id="name" placeholder="Name" class="input-simple" />
           </div>
           <div>
-            <div>Compensation and Benefits:</div>
-            <ul>
-              <li>
-                <span
-                  >-Competitive salary commensurate with experience (from
-                  $270,000 a year full time)</span
-                >
-              </li>
-              <li>
-                <span>-Medical Director stipend</span>
-              </li>
-              <li>
-                <span>-Annual bonus opportunity (productivity bonus)</span>
-              </li>
-              <li>
-                <span>-Dental insurance</span>
-              </li>
-              <li>
-                <span>-Vision insurance</span>
-              </li>
-              <li>
-                <span>-PTO</span>
-              </li>
-              <li>
-                <span>-Paid malpractice including tail</span>
-              </li>
-              <li>
-                <span>-CME reimbursement</span>
-              </li>
-              <li>
-                <span>-Work life holncowith no night shifts.</span>
-              </li>
-              <li>
-                <span>-Work in a saburban area...</span>
-              </li>
-            </ul>
+            <span>Your Email</span>
+            <input placeholder="Your Email" class="input-simple" />
           </div>
-          <div>Please call 268-570-9988 or fill out the form to apply.</div>
-          <div></div>
-        </div>
-        <div class="form-container">
-          <form class="form-box" id="contact_form" action="?" method="post">
-            <div>
-              <span>Name</span>
-              <input id="name" placeholder="Name" class="input-simple" />
+          <div>
+            <span>Your Phone</span>
+            <input placeholder="Your Phone" class="input-simple" />
+          </div>
+          <div>
+            <span>Department</span>
+            <input placeholder="Department" class="input-simple" />
+          </div>
+          <div>
+            <span>Message</span>
+            <input name="message" placeholder="Message" class="input-simple input-tall" />
+          </div>
+          <div>
+            <span>Attachment</span>
+            <div class="form-attachment-box">
+              <input placeholder="Resume" class="input-simple" />
+              <button class="button button-media">Browse</button>
             </div>
-            <div>
-              <span>Your Email</span>
-              <input placeholder="Your Email" class="input-simple" />
-            </div>
-            <div>
-              <span>Your Phone</span>
-              <input placeholder="Your Phone" class="input-simple" />
-            </div>
-            <div>
-              <span>Department</span>
-              <input placeholder="Department" class="input-simple" />
-            </div>
-            <div>
-              <span>Message</span>
-              <input
-                name="message"
-                placeholder="Message"
-                class="input-simple input-tall"
-              />
-            </div>
-            <div>
-              <span>Attachment</span>
-              <div class="form-attachment-box">
-                <input placeholder="Resume" class="input-simple" />
-                <button class="button button-media">Browse</button>
-              </div>
-            </div>
-            <!-- <div
-              id="recaptcha"
-              class="g-recaptcha"
-              data-sitekey="6LeHSR0kAAAAAIa5LmIys5b28F75xmVInB3el_Cw"
-            ></div>
-            <span class="recaptcha-error" id="recaptcha-error"
-              >reCAPTCHA is required</span
-            > -->
-            <div  onclick="sendMail()">
-             <button class="button background-button"> Send Message</button>
-            </div>
-          </form>
-        </div>
+          </div>
+          <div id="recaptcha" class="g-recaptcha" data-sitekey="6LeHSR0kAAAAAIa5LmIys5b28F75xmVInB3el_Cw"></div>
+          <span class="recaptcha-error" id="recaptcha-error">reCAPTCHA is required</span>
+          <div onclick="sendMail()">
+            <button class="button background-button"> Send Message</button>
+          </div>
+        </form>
       </div>
-      <div class="contacts-container">
-        <div class="contacts-box">
-          <div class="contacts-icon">
-            <img src="./assets/img/doctor.svg">
-          </div>
-          <div>
-            <div class="contact-title">
-              <span>Emloyment Opportunities:</span><br />
-            </div>
-            <div class="contact-info">
-              <span
-                >If you looking to join <br />
-                our team:</span
-              ><br />
-            </div>
-            <div class="contact-info">
-              <span>Phone:</span>
-              <span class="contact-link">267-570-9988</span>
-            </div>
-          </div>
+    </div>
+    <div class="contacts-container">
+      <div class="contacts-box">
+        <div class="contacts-icon">
+          <img src="./assets/img/doctor.svg">
         </div>
-        <div class="contacts-box">
-          <div class="contacts-icon">
-            <img src="./assets/img/geo.svg">
+        <div>
+          <div class="contact-title">
+            <span>Emloyment Opportunities:</span><br />
           </div>
-          <div>
-            <div class="contact-title"><span>Adress:</span><br /></div>
-            <div class="contact-info">
-              <span
-                >57 Street Rd ste 4,<br />
-                Southampton, PA 18966
-              </span>
-            </div>
+          <div class="contact-info">
+            <span>If you looking to join <br />
+              our team:</span><br />
+          </div>
+          <div class="contact-info">
+            <span>Phone:</span>
+            <span class="contact-link">267-570-9988</span>
           </div>
         </div>
       </div>
-    </section>
-    <footer>
-      <div class="footer">
-        <img src="./assets/img/logo.svg" width="200px" height="200px">
+      <div class="contacts-box">
+        <div class="contacts-icon">
+          <img src="./assets/img/geo.svg">
+        </div>
+        <div>
+          <div class="contact-title"><span>Adress:</span><br /></div>
+          <div class="contact-info">
+            <span>57 Street Rd ste 4,<br />
+              Southampton, PA 18966
+            </span>
+          </div>
+        </div>
       </div>
-      <div class="footer rights">
-        © 2023 SouthamptonUrgentCare.com. All rights reserved.
-      </div>
-    </footer>
+    </div>
+  </section>
+  <footer>
+    <div class="footer">
+      <img src="./assets/img/logo.svg" width="200px" height="200px">
+    </div>
+    <div class="footer rights">
+      © 2023 SouthamptonUrgentCare.com. All rights reserved.
+    </div>
+  </footer>
 
-    <script src="index.js"></script>
-  </body>
+  <script src="index.js"></script>
+</body>
+
 </html>
