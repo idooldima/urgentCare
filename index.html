@@ -23,29 +23,6 @@
       emailjs.init("cxGqJQeEC5ZcoLCcw");
     })();
   </script>
-  <!-- <script type="text/javascript">
-      window.onload = function () {
-        document
-          .getElementById("contact_form")
-          .addEventListener("submit", function (event) {
-            event.preventDefault();
-            if (this.name.value.length < 3 && this.message.value.length < 10) {
-              alert("name and message not valid");
-            } else {
-              emailjs
-                .sendForm("service_6g4b9sf", "template_o7kjbe1", this)
-                .then(
-                  function () {
-                    console.log("SUCCESS!");
-                  },
-                  function (error) {
-                    console.log("FAILED...", error);
-                  }
-                );
-            }
-          });
-      };
-    </script> -->
   <title>Urgent Care</title>
 </head>
 
@@ -156,9 +133,9 @@
             <select name="department" class="input-simple">
               <!--Supplement an id here instead of using 'name'-->
               <option value="" selected disabled hidden>Department</option>
-              <option value="value1">Значение 1</option>
-              <option value="value2">Значение 2</option>
-              <option value="value3">Значение 3</option>
+              <option value="the first department">the first department</option>
+              <option value="the second department">the second department</option>
+              <option value="the third department">the third department</option>
             </select>
           </div>
           <div>
