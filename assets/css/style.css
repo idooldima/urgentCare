@@ -62,17 +62,18 @@ section{
   padding: var(--section-padding);
   color: var(--color-blue);
   font-size: 48px;
+  display: flex;
+  align-items: center;
+  gap:20px;
 }
 
-.title::after {
-  content: "-";
-  margin: 15px;
+.line{
+  background-color: var(--color-blue);
+  /* margin: 15px; */
+  height: 2px;
+  width: 50px;
 }
 
-.title::before {
-  content: "-";
-  margin: 15px;
-}
 
 .section-container {
   padding: var(--section-padding);

@@ -29,6 +29,8 @@ function sendMail(form) {
     name: form.name.value,
     message: form.message.value,
     department: form.department.value,
+    email: form.email.value,
+    phone: form.phone.value,
     "g-recaptcha-response": captcha,
   };
 
