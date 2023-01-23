@@ -10,16 +10,6 @@ window.onload = function () {
         alert("name and message not valid");
       } else {
         sendMail(this)
-        // emailjs
-        //   .sendForm("service_6g4b9sf", "template_o7kjbe1", this)
-        //   .then(
-        //     function () {
-        //       console.log("SUCCESS!");
-        //     },
-        //     function (error) {
-        //       console.log("FAILED...", error);
-        //     }
-        //   );
       }
     });
 };
