@@ -37,6 +37,7 @@ function sendMail(form) {
   // add here all fields you need
   let dataToSend = {
     name: form.name.value,
+    message: form.message.value,
     "g-recaptcha-response": captcha,
   };
 
