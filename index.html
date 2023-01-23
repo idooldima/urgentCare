@@ -38,7 +38,9 @@
 
   <section>
     <div class="title">
-      <div class="line"></div> Carrers <div class="line"></div>
+      <div class="line"></div>
+      Carrers
+      <div class="line"></div>
     </div>
     <div class="section-container">
       <div class="carrers-box">
@@ -54,7 +56,7 @@
         <div>
           <div>Responsibilities:</div>
           <ul>
-            <li>
+            <li class="num">
               <span>-Provide direct care to patients of the clinic</span>
             </li>
             <li>
@@ -132,14 +134,15 @@
             <span>Department</span>
             <select name="department" class="input-simple">
               <option value="" selected disabled hidden>Department</option>
-              <option value="the first department">The first department</option>
-              <option value="the second department">The second department</option>
-              <option value="the third department">The third department</option>
+              <option value="value1">Значение 1</option>
+              <option value="value2">Значение 2</option>
+              <option value="value3">Значение 3</option>
             </select>
           </div>
           <div>
             <span>Message</span>
-            <input name="message" placeholder="Message" class="input-simple input-tall" />
+            <textarea rows="5" name="message" placeholder="Message" class="input-simple">
+              </textarea>
           </div>
           <!-- <div>
               <span>Attachment</span>
@@ -151,7 +154,7 @@
           <div id="recaptcha" class="g-recaptcha" data-sitekey="6LeHSR0kAAAAAIa5LmIys5b28F75xmVInB3el_Cw"></div>
           <span class="recaptcha-error" id="recaptcha-error">reCAPTCHA is required</span>
           <div>
-            <button class="button background-button"> Send Message</button>
+            <button type="submit" class="button background-button"> Send Message</button>
           </div>
         </form>
       </div>

@@ -6,9 +6,7 @@ window.onload = function () {
     .getElementById("contact_form")
     .addEventListener("submit", function (event) {
       event.preventDefault();
-      if (this.name.value.length < 3 && this.message.value.length < 10) {
-        alert("name and message not valid");
-      } else {
+      if (isValid(this)) {
         sendMail(this)
       }
     });
@@ -56,3 +54,29 @@ function sendMail(form) {
     recaptchaError.classList.add("show-recaptcha-error");
   }
 }
+
+const names = ['name', 'email', 'message', 'department', 'phone']
+
+function isValid(form) {
+  let isValid = true;
+  const valid = names.forEach((name) => {
+    if (!form[name].value.trim().length) {
+      form[name].classList.add('input-invalid')
+      isValid = false;
+    }
+  })
+  return isValid;
+}
+
+
+function validate(e) {
+  if (!e.target.value.trim()) {
+    e.target.classList.add('input-invalid')
+  } else {
+    e.target.classList.remove('input-invalid')
+  }
+}
+
+[...document.querySelectorAll('.input-simple')].forEach(item => {
+  item.addEventListener('change', validate)
+})
