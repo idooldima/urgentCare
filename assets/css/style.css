@@ -1,5 +1,5 @@
 :root {
-  --section-padding: 0px 200px;
+  --section-padding: 20px 200px;
   --input-border: 1px solid #c7d2de;
   --color-blue: #2e75b5;
 }
@@ -8,6 +8,10 @@ body {
   margin: 0px;
   color: #5c5c5c;
   font-size: 17px;
+}
+
+section{
+  background-image: url("../img/bg.png");
 }
 
 #overlay {
@@ -44,7 +48,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 250px;
-  height: 80px;
+  /* height: 80px; */
 }
 
 .header-box span {
@@ -53,28 +57,25 @@ body {
   text-transform: uppercase;
 }
 
-.fat {
-  font-weight: 600;
-}
-
-.light {
-  font-weight: 400;
-}
-
 .Title {
+  padding-top: 20px;
   padding: var(--section-padding);
   color: var(--color-blue);
-  font-size: 25px;
+  font-size: 48px;
 }
 
-.Title h1::after {
+.Title::after {
   content: "-";
   margin: 15px;
+  width: 40px;
+  height: 10px;
 }
 
-.Title h1::before {
+.Title::before {
   content: "-";
   margin: 15px;
+  width: 40px;
+  height: 10px;
 }
 
 .section-container {

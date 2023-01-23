@@ -1,0 +1,43 @@
+ @media screen and (max-width: 900px) {
+    .header-container{
+        padding: 20px;
+    }
+    .rights{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .section-container{
+        padding: 20px;
+        margin-bottom: 0px;
+    }
+    .form-container{
+        margin: 20px 0px;
+    }
+    .background-button{
+        width: 100%;
+    }
+    .button-media{
+        display: none;
+    }
+    .section-container{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    
+    .contacts-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    }
+    .contacts-box{
+        margin: 20px;
+    }
+
+}
