@@ -1,7 +1,30 @@
 let loader = document.getElementById("loader");
 let recaptchaError = document.getElementById("recaptcha-error");
 
-function sendMail() {
+window.onload = function () {
+  document
+    .getElementById("contact_form")
+    .addEventListener("submit", function (event) {
+      event.preventDefault();
+      if (this.name.value.length < 3 && this.message.value.length < 10) {
+        alert("name and message not valid");
+      } else {
+        sendMail(this)
+        // emailjs
+        //   .sendForm("service_6g4b9sf", "template_o7kjbe1", this)
+        //   .then(
+        //     function () {
+        //       console.log("SUCCESS!");
+        //     },
+        //     function (error) {
+        //       console.log("FAILED...", error);
+        //     }
+        //   );
+      }
+    });
+};
+
+function sendMail(form) {
   const CERVICE_ID = "service_liawdtv";
   const TEMPLETE_ID = "template_fmbc174";
   let captcha = grecaptcha.getResponse();
@@ -13,7 +36,7 @@ function sendMail() {
 
   // add here all fields you need
   let dataToSend = {
-    name: document.getElementById("name").value,
+    name: form.name.value,
     "g-recaptcha-response": captcha,
   };
 
@@ -22,7 +45,7 @@ function sendMail() {
     emailjs
       .send(CERVICE_ID, TEMPLETE_ID, dataToSend)
       .then((res) => {
-        document.getElementById("name").value = "";
+        form.reset();
         console.log(res);
       })
       .then(() => grecaptcha.reset())
