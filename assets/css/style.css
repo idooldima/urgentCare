@@ -204,6 +204,7 @@ footer {
 .background-button {
   background-color: var(--color-blue);
   color: white;
+  padding: 14px 40px;
 }
 
 .button-media {
