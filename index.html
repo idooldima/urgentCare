@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="./assets/css/mobile.css" />
   <link rel="stylesheet" href="./assets/css/spinner.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="./assets/img/cross_small.png">
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <script type="text/javascript">
@@ -147,13 +147,19 @@
             <textarea rows="5" name="message" placeholder="Message" class="input-simple">
               </textarea>
           </div>
-          <!-- <div>
-              <span>Attachment</span>
+          <div>
+            <span>Attachment</span>
+            <div class="form-attachment-box">
               <div class="form-attachment-box">
-                <input placeholder="Resume" class="input-simple" />
-                <button class="button button-media">Browse</button>
+                <label for="file-input" class="input-simple input-file"></label>
+                <input placeholder="Resume" id="file-input" type="file" class="hide-input" />
+                <label for="file-upload" class="button button-media">
+                  Browse
+                </label>
+                <input id="file-upload" type="file" class="hide-input" />
               </div>
-            </div> -->
+            </div>
+          </div>
           <div id="recaptcha" class="g-recaptcha" data-sitekey="6LeHSR0kAAAAAIa5LmIys5b28F75xmVInB3el_Cw"></div>
           <span class="recaptcha-error" id="recaptcha-error">reCAPTCHA is required</span>
           <div>

@@ -100,6 +100,16 @@ section {
   border: 1px solid rgb(231, 136, 136)
 }
 
+.input-file {
+  height: 14px;
+  cursor: pointer;
+}
+
+.hide-input {
+  display: none;
+}
+
+
 textarea:invalid {
   border: 1px solid rgb(231, 136, 136)
 }
@@ -195,6 +205,12 @@ footer {
   background-color: var(--color-blue);
   color: white;
 }
+
+.button-media {
+  background-color: #d1d1d1;
+  padding: 10px 40px;
+}
+
 
 .button {
   border: none;
