@@ -8,6 +8,7 @@ body {
   margin: 0px;
   color: #5c5c5c;
   font-size: 17px;
+  font-family: 'Lato', sans-serif;
 }
 
 section {
@@ -67,7 +68,6 @@ section {
   min-width: 50%;
   display: flex;
   justify-content: end;
-  align-items: center;
 }
 
 .form-box {
